@@ -4,10 +4,11 @@
     <title>My First App</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
 <body>
     <div class="container header" th:insert="fragments/header :: header"></div>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 ms-5 me-5">
         <div class="col" th:each="flat : ${flats}" th:insert="fragments/card :: card">
         </div>
     </div>

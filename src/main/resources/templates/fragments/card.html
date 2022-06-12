@@ -1,9 +1,11 @@
 <div th:fragment="card" class="card shadow-sm">
-    <img
-            th:src="${flat.imageLink}"
-            class="card-img-top"
-            alt=""
-    />
+    <div class="img-holder">
+        <img
+                th:src="${flat.imageLink}"
+                class="card-img-top"
+                alt=""
+        />
+    </div>
     <div class="card-body ">
         <div th:text="${flat.title} + ', ' + ${flat.square} +' кв.м, ' + ${flat.floor} +'/' + ${flat.floorsInBuilding} + ' эт.'" class="text-info card-text">
 <!--            3-х комнатная квартира, 35 m2, 3/5эт.-->
