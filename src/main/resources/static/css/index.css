@@ -3,3 +3,6 @@ img{
     width: 110px;
     height: 220px;
 }
+a {
+    text-decoration:none;
+}

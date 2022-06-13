@@ -1,15 +1,16 @@
-<div th:fragment="card" class="card shadow-sm">
+<div th:fragment="card" class="card shadow-sm" xmlns="http://www.w3.org/1999/html">
     <div class="img-holder">
-        <img
-                th:src="${flat.imageLink}"
-                class="card-img-top"
-                alt=""
-        />
+        <a th:href="'/flat-'+${flat.id}">
+            <img
+                    th:src="${flat.imageLink}"
+                    class="card-img-top"
+                    alt=""
+            />
+        </a>
     </div>
     <div class="card-body ">
-        <div th:text="${flat.title} + ', ' + ${flat.square} +' кв.м, ' + ${flat.floor} +'/' + ${flat.floorsInBuilding} + ' эт.'" class="text-info card-text">
-<!--            3-х комнатная квартира, 35 m2, 3/5эт.-->
-        </div>
+        <a th:text="${flat.title} + ', ' + ${flat.square} +' кв.м, ' + ${flat.floor} +'/' + ${flat.floorsInBuilding} + ' эт.'" class="text-info card-text" th:href="'/flat-'+${flat.id}">
+        </a>
 
         <div class="d-flex justify-content-between align-items-center">
             <div th:text="${flat.addressShort}"></div>
