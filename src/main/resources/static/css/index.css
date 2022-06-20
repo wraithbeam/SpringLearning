@@ -6,3 +6,8 @@ img{
 a {
     text-decoration:none;
 }
+
+input{
+    border-color: deepskyblue;
+    width: 80%;
+}

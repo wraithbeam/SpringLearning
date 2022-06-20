@@ -19,6 +19,20 @@ public class Flat {
     private int floorsInBuilding;
     private String imageLink;
 
+    public Flat(String title, String address, String addressShort, double square, int rooms, int cost, int floor, int floorsInBuilding, String imageLink) {
+        this.title = title;
+        this.address = address;
+        this.addressShort = addressShort;
+        this.square = square;
+        this.rooms = rooms;
+        this.cost = cost;
+        this.floor = floor;
+        this.floorsInBuilding = floorsInBuilding;
+        this.imageLink = imageLink;
+    }
+
+    public Flat() {
+    }
 
     public String getAddressShort() {
         return addressShort;
